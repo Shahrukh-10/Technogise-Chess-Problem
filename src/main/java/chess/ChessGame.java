@@ -21,8 +21,8 @@ public class ChessGame {
             return;
         }
 
-        String pieceType = parts[0].toLowerCase();
-        String position = parts[1].toUpperCase();
+        String pieceType = parts[0].trim().toLowerCase();
+        String position = parts[1].trim().toUpperCase();
         ChessPiece piece;
 
         switch (pieceType) {
