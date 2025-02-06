@@ -52,3 +52,5 @@ To run tests using Maven:
    java -cp out chess.ChessGame
    ```
 
+### King Positions to move
+![King Positions to move](King Positions to move.png)
