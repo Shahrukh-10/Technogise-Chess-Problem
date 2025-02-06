@@ -53,4 +53,4 @@ To run tests using Maven:
    ```
 
 ### King Positions to move
-![King Positions to move](King Positions to move.png)
+![King Positions to move](./King Positions to move.png)
