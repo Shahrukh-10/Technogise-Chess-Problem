@@ -1,6 +1,5 @@
 package chess.pieces;
 
-// Pawn.java
 import chess.model.Position;
 
 import java.util.HashSet;
@@ -15,7 +14,8 @@ public class Pawn extends ChessPiece {
     @Override
     public Set<String> getValidMoves() {
         Set<String> moves = new HashSet<>();
-        int newRow = position.getRow() + 1; // Forward movement
+
+        int newRow = position.getRow() + 1; // Forward movement to one position
 
         if (isInsideBoard(newRow, position.getCol())) {
             moves.add(new Position(newRow, position.getCol()).toChessNotation());

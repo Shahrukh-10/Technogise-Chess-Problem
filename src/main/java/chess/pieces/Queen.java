@@ -1,6 +1,5 @@
 package chess.pieces;
 
-// Queen.java
 import chess.model.Position;
 
 import java.util.HashSet;
@@ -15,14 +14,15 @@ public class Queen extends ChessPiece {
     @Override
     public Set<String> getValidMoves() {
         Set<String> moves = new HashSet<>();
+        // If we want sorted moves then use tree set
 
-        // Horizontal & Vertical
+        // Horizontal & Vertical movement
         for (int i = 0; i < 8; i++) {
             if (i != position.getRow()) moves.add(new Position(i, position.getCol()).toChessNotation());
             if (i != position.getCol()) moves.add(new Position(position.getRow(), i).toChessNotation());
         }
 
-        // Diagonal
+        // Diagonal movement
         for (int i = 1; i < 8; i++) {
             addMoveIfValid(moves, position.getRow() + i, position.getCol() + i);
             addMoveIfValid(moves, position.getRow() - i, position.getCol() - i);

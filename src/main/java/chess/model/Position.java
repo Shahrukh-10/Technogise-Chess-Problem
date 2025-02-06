@@ -1,6 +1,5 @@
 package chess.model;
 
-// Position.java
 public class Position {
     private int row; // 0-7 (1-8 in chess notation)
     private int col; // 0-7 (A-H in chess notation)

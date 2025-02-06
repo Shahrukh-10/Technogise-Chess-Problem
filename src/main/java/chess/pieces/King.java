@@ -12,19 +12,19 @@ public class King extends ChessPiece {
     @Override
     public Set<String> getValidMoves() {
         Set<String> moves = new HashSet<>();
+        // If we want sorted moves then use tree set
 
         int row = position.getRow();
         int col = position.getCol();
 
-        // Manually checking each possible move
-        addMove(moves, row - 1, col - 1); // bottom-left
-        addMove(moves, row - 1, col);     // king Top
-        addMove(moves, row - 1, col + 1); // Top-left
-        addMove(moves, row, col - 1);     // king Left
-        addMove(moves, row, col + 1);     // king Right
-        addMove(moves, row + 1, col - 1); // Bottom-right
-        addMove(moves, row + 1, col);     // Bottom
-        addMove(moves, row + 1, col + 1); // top-right
+        addMove(moves, row - 1, col - 1); // Bottom Left
+        addMove(moves, row - 1, col); // Bottom
+        addMove(moves, row - 1, col + 1); // Bottom Right
+        addMove(moves, row, col - 1); // Left
+        addMove(moves, row, col + 1); // Right
+        addMove(moves, row + 1, col - 1); // Top Left
+        addMove(moves, row + 1, col); // Top
+        addMove(moves, row + 1, col + 1); // Top Right
 
         return moves;
     }

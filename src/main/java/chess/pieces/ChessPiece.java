@@ -1,9 +1,7 @@
 package chess.pieces;
 
-// ChessPiece.java
 import chess.model.Position;
 
-import java.util.HashSet;
 import java.util.Set;
 
 public abstract class ChessPiece {

@@ -11,11 +11,11 @@ import java.util.Scanner;
 public class ChessGame {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter chess piece and position (e.g., Queen E4): ");
+        System.out.print("Enter chess piece and position (e.g., Queen,E4): ");
         String input = scanner.nextLine();
         scanner.close();
 
-        String[] parts = input.split(" ");
+        String[] parts = input.split(",");
         if (parts.length != 2) {
             System.out.println("Invalid input format.");
             return;
